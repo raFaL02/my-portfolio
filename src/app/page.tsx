@@ -1,6 +1,8 @@
+import ProjectCarousel from "@/components/project-carousel";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -64,10 +66,12 @@ export default function Home() {
         </section>
       </Reveal>
       <Reveal>
-        <section id="projects" className="w-full max-w-6xl px-6 py-16">
-          <h1 className="mb-10 text-center text-4xl font-bold">Projetos 👨‍💻</h1>
+        <section id="projects" className="w-full max-w-6xl px-6">
+          <h1 className="mt-10 text-center text-4xl font-bold">Projetos 👨‍💻</h1>
 
-          <div className="grid grid-cols-1 items-center gap-8 text-xl md:grid-cols-2">
+          <ProjectCarousel />
+
+          {/* <div className="grid grid-cols-1 items-center gap-8 text-xl md:grid-cols-2">
             <div className="space-y-4">
               <h2 className="text-3xl font-bold">Barber Link</h2>
               <p>
@@ -89,15 +93,15 @@ export default function Home() {
                 height={300}
                 className="rounded-lg object-cover shadow-lg"
               />
-              <a
+              <Link
                 href="https://barber-app-omega.vercel.app/"
                 target="_blank"
                 className="self-end text-right text-sm"
               >
                 <Button className="cursor-pointer">Ver projeto</Button>
-              </a>
+              </Link>
             </div>
-          </div>
+          </div> */}
         </section>
       </Reveal>
     </div>
