@@ -1,16 +1,14 @@
-import ProjectCarousel from "@/components/project-carousel";
+import CarouselComponent from "@/components/carousel-component";
 import { Reveal } from "@/components/reveal";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex w-screen flex-col items-center justify-center">
+    <div className="flex w-full flex-col items-center justify-center">
       <Reveal>
         <section
           id="about"
-          className="mt-30 flex w-screen flex-col items-center justify-center border-b px-6"
+          className="mt-30 flex w-full flex-col items-center justify-center border-b px-6"
         >
           <Image
             src="/profile.png"
@@ -65,44 +63,17 @@ export default function Home() {
           </div>
         </section>
       </Reveal>
+
       <Reveal>
-        <section id="projects" className="w-full max-w-6xl px-6">
+        <section id="projects" className="w-full border-b">
           <h1 className="mt-10 text-center text-4xl font-bold">Projetos 👨‍💻</h1>
 
-          <ProjectCarousel />
-
-          {/* <div className="grid grid-cols-1 items-center gap-8 text-xl md:grid-cols-2">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold">Barber Link</h2>
-              <p>
-                Este projeto foi desenvolvido com Next.js, Tailwind CSS e
-                integrações com APIs externas
-              </p>
-              <ul className="list-inside list-disc">
-                <li>Next.js + TypeScript</li>
-                <li>Responsivo e acessível</li>
-                <li>Integração com API externa</li>
-              </ul>
-            </div>
-
-            <div className="flex flex-col items-end gap-4">
-              <Image
-                src="/projects/barberLink.png"
-                alt="Imagem do projeto"
-                width={500}
-                height={300}
-                className="rounded-lg object-cover shadow-lg"
-              />
-              <Link
-                href="https://barber-app-omega.vercel.app/"
-                target="_blank"
-                className="self-end text-right text-sm"
-              >
-                <Button className="cursor-pointer">Ver projeto</Button>
-              </Link>
-            </div>
-          </div> */}
+          <CarouselComponent />
         </section>
+      </Reveal>
+
+      <Reveal>
+        <section id="contact"></section>
       </Reveal>
     </div>
   );
