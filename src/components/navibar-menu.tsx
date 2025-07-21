@@ -44,7 +44,7 @@ const NavbarMenu = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 asChild
-                className={`${navigationMenuTriggerStyle()} text-2xl`}
+                className={`${navigationMenuTriggerStyle()} text-2xl hover:bg-violet-400`}
               >
                 <Link href="/">Home</Link>
               </NavigationMenuLink>
@@ -52,7 +52,7 @@ const NavbarMenu = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 asChild
-                className={`${navigationMenuTriggerStyle()} text-2xl`}
+                className={`${navigationMenuTriggerStyle()} text-2xl hover:bg-violet-400`}
               >
                 <Link href="#about">Sobre</Link>
               </NavigationMenuLink>
@@ -60,7 +60,7 @@ const NavbarMenu = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 asChild
-                className={`${navigationMenuTriggerStyle()} text-2xl`}
+                className={`${navigationMenuTriggerStyle()} text-2xl hover:bg-violet-400`}
               >
                 <Link href="#projects">Projetos</Link>
               </NavigationMenuLink>
@@ -68,7 +68,7 @@ const NavbarMenu = () => {
             <NavigationMenuItem>
               <NavigationMenuLink
                 asChild
-                className={`${navigationMenuTriggerStyle()} text-2xl`}
+                className={`${navigationMenuTriggerStyle()} text-2xl hover:bg-violet-400`}
               >
                 <Link href="#contact">Contato</Link>
               </NavigationMenuLink>
