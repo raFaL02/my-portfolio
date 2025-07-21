@@ -34,7 +34,7 @@ const projects = [
 export default function CarouselComponent() {
   return (
     <div className="mt-10 flex w-full justify-center px-4">
-      <Carousel className="w-full max-w-4xl">
+      <Carousel className="w-full max-w-4xl p-6">
         <CarouselContent>
           {projects.map((project, i) => (
             <CarouselItem key={i}>
@@ -61,7 +61,9 @@ export default function CarouselComponent() {
                       rel="noopener noreferrer"
                       className="inline-block"
                     >
-                      <Button className="cursor-pointer">Ver projeto</Button>
+                      <Button className="w-full cursor-pointer bg-white font-semibold text-violet-600 hover:bg-violet-100">
+                        Ver projeto
+                      </Button>
                     </Link>
                   </CardContent>
                 </Card>
