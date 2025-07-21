@@ -6,9 +6,10 @@ export async function POST(req: Request) {
   const { name, email, message } = await req.json();
 
   try {
+    const toEmail = process.env.EMAIL_TO_SEND!;
     const data = await resend.emails.send({
       from: "Portfólio Rafael <oneboarding@resend.dev>",
-      to: "rafalimabcl@gmail.com",
+      to: toEmail,
       subject: "Nova mensagem no seu portfólio",
       html: `
         <p><strong>Nome:</strong> ${name}</p>
