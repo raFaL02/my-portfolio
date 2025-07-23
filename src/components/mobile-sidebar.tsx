@@ -15,7 +15,7 @@ export function MobileSidebar() {
     <div className="md:hidden">
       <Sheet>
         <SheetTrigger className="p-2">
-          <Menu className="h-6 w-6" />
+          <Menu className="h-8 w-8" />
         </SheetTrigger>
 
         <SheetContent
