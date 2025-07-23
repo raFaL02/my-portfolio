@@ -9,6 +9,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
+import { MobileSidebar } from "./mobile-sidebar";
 
 const NavbarMenu = () => {
   const [showNavbar, setShowNavbar] = useState(true);
@@ -38,8 +39,9 @@ const NavbarMenu = () => {
         showNavbar ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="flex items-center justify-center p-4 backdrop-blur-md">
-        <NavigationMenu>
+      <MobileSidebar />
+      <div className="hidden items-center justify-center p-4 backdrop-blur-md md:flex">
+        <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink
